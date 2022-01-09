@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { colors } from "./variables";
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -9,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'IBM Plex Sans', sans-serif;
+    background: ${colors.GrayBcg};
   }
 `;
 
