@@ -1,11 +1,10 @@
 /* eslint-disable react/prop-types */
-import CreateButton from "../CreateButton/CreateButton";
-import { Header, HeaderLogo } from "./StyledAppHeader";
+import { Header, HeaderLogo, Button } from "./StyledAppHeader";
 
 function AppHeader({ slideModal }) {
   return (
     <Header>
-      <CreateButton slideModal={slideModal} value="Create new note" />
+      <Button onClick={slideModal}>Create new note</Button>
       <HeaderLogo>Notes app!</HeaderLogo>
     </Header>
   );

@@ -8,9 +8,9 @@ import {
   ModalInput,
   ModalLabel,
   ModalSelect,
+  Submit,
 } from "./StyledAppModal";
 import { AiOutlineClose } from "react-icons/ai";
-import CreateButton from "../CreateButton/CreateButton";
 
 function AppModal({ slideModal }) {
   const [noteTitle, setnoteTitle] = useState("");
@@ -44,10 +44,10 @@ function AppModal({ slideModal }) {
           onChange={(e) => setnoteColor(e.target.value)}
         >
           <option value="green">Green</option>
-          <option value="red">Blue</option>
-          <option value="blue">Red</option>
+          <option value="blue">Blue</option>
+          <option value="red">Red</option>
         </ModalSelect>
-        <CreateButton value="Create" />
+        <Submit type="submit" value="Create" />
       </ModalForm>
     </Modal>
   );

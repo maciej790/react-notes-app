@@ -13,6 +13,24 @@ export const Header = styled.header`
   left: 0;
 `;
 
+export const Button = styled.button`
+  width: 40%;
+  height: 50px;
+  background: ${colors.GreenButton};
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: ${colors.White};
+  font-weight: bold;
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+`;
+
 export const HeaderLogo = styled.p`
   color: ${colors.GrayText};
   font-weight: bold;

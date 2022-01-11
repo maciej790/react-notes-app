@@ -99,3 +99,21 @@ export const ModalSelect = styled.select`
   color: ${colors.GrayText};
   margin: 20px 0 40px 0;
 `;
+
+export const Submit = styled.input`
+  width: 40%;
+  height: 50px;
+  background: ${colors.GreenButton};
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: ${colors.White};
+  font-weight: bold;
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+`;

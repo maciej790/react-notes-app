@@ -1,4 +1,5 @@
 import { useState } from "react";
+import AppBanner from "./components/AppBanner/AppBanner";
 import AppHeader from "./components/AppHeader/AppHeader";
 import AppModal from "./components/AppModal/AppModal";
 import GlobalStyle from "./style/globalStyles";
@@ -14,6 +15,7 @@ function App() {
       <GlobalStyle />
       <AppHeader slideModal={slideModal} />
       {isSlide && <AppModal slideModal={slideModal} />}
+      <AppBanner />
     </Wrapper>
   );
 }
