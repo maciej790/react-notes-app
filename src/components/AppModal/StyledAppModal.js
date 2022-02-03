@@ -98,6 +98,7 @@ export const ModalSelect = styled.select`
   border-bottom: 1px solid ${colors.Black};
   color: ${colors.GrayText};
   margin: 20px 0 40px 0;
+  text-align: center;
 `;
 
 export const Submit = styled.input`
